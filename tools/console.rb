@@ -4,20 +4,25 @@ def reload
   load 'config/environment.rb'
 end
 
-#car_owners
-sarah = Car_owner.new('sarah')
-maduri = Car_owner.new('maduri')
-ritz = Car_owner.new('ritz')
+#carowners
+sarah = CarOwner.new('sarah')
+joe = CarOwner.new('joe')
+hoots = CarOwner.new('hoots')
+
 
 #mechanics
-mechanic1 = Mechanic.new('mechanic1', 'antique')
-mechanic2 = Mechanic.new('mechanic2', 'exotic')
-mechanic3 = Mechanic.new('mechanic3', 'flash')
+mechanic1 = Mechanic.new('mechanic1', 'new')
+mechanic2 = Mechanic.new('mechanic2', 'vintage')
+mechanic3 = Mechanic.new('mechanic3', 'fancy')
+mechanic4 = Mechanic.new('mechanic4', 'fancy')
+
 
 #cars
-car1 = Car.new('bmw', 'X5', 'exotic', sarah, mechanic1)
-car2 = Car.new('honda', 'accent', 'antique', maduri, mechanic2)
-car3 = Car.new('audi', 'A5', 'flash', ritz, mechanic3)
+car1 = Car.new('bmw', 'x5', 'new', sarah, mechanic1)
+car2 = Car.new('jag', 'e-type', 'vintage', joe, mechanic2)
+car3 = Car.new('porsche', 'cayenne', 'fancy', hoots, mechanic3)
+car4 = Car.new('audi', 'a5', 'new', sarah, mechanic1)
+
 
 
 
